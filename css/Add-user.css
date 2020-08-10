@@ -1,0 +1,37 @@
+/** @format */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.data_list {
+   margin: 5em 0em 3em 20em;
+   padding: 13px 0px;
+   width: 500px;
+   /* height: 200px; */
+   background-color: seashell;
+   box-shadow: 0px 0px 5px 4px rgb(138, 71, 23);
+   /* border: 3px solid red; */
+}
+
+.data_heading {
+   text-align: center;
+   color: rgb(28, 144, 148);
+   font-size: 2em;
+   margin-bottom: 1em;
+}
+.data_heading:hover {
+   color: rgb(12, 78, 80);
+}
+.data_unList {
+   color: #515d62;
+}
+.data_list_item {
+   padding-top: 5px;
+   margin-bottom: 3px;
+   margin-left: 5em;
+}
+.main_else_error {
+   text-align: center;
+}

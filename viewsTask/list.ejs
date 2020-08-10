@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title><%= pageTitle %></title>
+ <link rel="stylesheet" href="../css/list.css">
+ <link rel="stylesheet" href="../css/Add-user.css">
+</head>
+
+<body>
+ <header class="main_header">
+  <nav class="main_nav">
+   <ul class="main_list">
+    <li class="main_list_item"><a class="active" href="/">List</a></li>
+    <li class="main_list_item"><a href="/Add-user">Add Users</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main class="data_list">
+  <%if (users.length > 0) { %>
+  <div class="data_div">
+   <h3 class="data_heading">Added Name</h3>
+   <ul class="data_unList">
+    <% for (let showUser of users) { %>
+    <li class="data_list_item"><%= showUser.title.toUpperCase() %></li>
+    <% } %>
+   </ul>
+  </div>
+  <% } else { %>
+  <h1 class="main_else_error">No Name Found...!</h1>
+  <% } %>
+ </main>
+</body>
+
+</html>
